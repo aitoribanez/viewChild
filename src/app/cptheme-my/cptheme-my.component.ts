@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angula
 @Component({
   selector: 'app-cptheme-my',
   templateUrl: './cptheme-my.component.html',
-  styleUrls: ['./cptheme-my.component.css']
+  styles: ['']
 })
 export class CpthemeMyComponent implements OnInit, AfterViewInit {
   @ViewChild('name') private elName: ElementRef;

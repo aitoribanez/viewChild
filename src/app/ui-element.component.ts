@@ -13,14 +13,13 @@ export class UIElementComponent implements AfterViewInit {
   @ViewChild(NumberComponent) private numberComponent: NumberComponent;
   @ViewChild(StopwatchComponent) private stopwatchComponent: StopwatchComponent;
   @ViewChild(CpColorDirective) private cpColorDirective: CpColorDirective;
-  @ViewChild(CpThemeComponent) private cpThemeComponent: CpThemeComponent;
   @ViewChild(CpthemeMyComponent) private cpthemeMyComponent: CpthemeMyComponent;
   @ViewChild('name') private elTitle: ElementRef;
 
   ngAfterViewInit() {
     this.elTitle.nativeElement.style.backgroundColor = 'cyan';
     this.elTitle.nativeElement.style.color = 'red';
-      console.log('sale', this)
+    console.log(this)
   }
 
   increase() {
@@ -40,7 +39,6 @@ export class UIElementComponent implements AfterViewInit {
   }
 
   changeColor(color: string) {
-    console.log('ona', this.cpColorDirective)
     this.cpColorDirective.change(color);
   }
 

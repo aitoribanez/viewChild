@@ -12,13 +12,12 @@ export class CpThemeComponent implements AfterViewInit {
     console.log('theme init')
     this.elName.nativeElement.style.backgroundColor = 'cyan';
     this.elName.nativeElement.style.color = 'red';
-    /* this.elCity.nativeElement.style.backgroundColor = 'cyan';
-    this.elCity.nativeElement.style.color = 'red'; */
+    this.elCity.nativeElement.style.backgroundColor = 'cyan';
+    this.elCity.nativeElement.style.color = 'red';
   }
 
   changeColor(backgroundColor, color) {
     this.elName.nativeElement.style.backgroundColor = backgroundColor;
     this.elName.nativeElement.style.color = color;
-    console.log('change color to', color)
   }
 }
