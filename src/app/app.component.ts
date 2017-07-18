@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 			   <app-stopwatch-parent></app-stopwatch-parent>
 			   <app-cpcolor-parent></app-cpcolor-parent>
 			   <app-cptheme></app-cptheme>
+			   <br /><br />
 			   <app-ui-element></app-ui-element>
              `
 })

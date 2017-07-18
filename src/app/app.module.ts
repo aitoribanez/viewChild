@@ -10,6 +10,7 @@ import { CpColorDirective } from './cpcolor.directive';
 import { CpColorParentComponent } from './cpcolor-parent.component';
 import { CpThemeComponent } from './cptheme.component';
 import { UIElementComponent } from './ui-element.component';
+import { CpthemeMyComponent } from './cptheme-my/cptheme-my.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { UIElementComponent } from './ui-element.component';
     CpColorDirective,
     CpColorParentComponent,
     CpThemeComponent,
-    UIElementComponent
+    UIElementComponent,
+    CpthemeMyComponent
   ],
   bootstrap: [
     AppComponent

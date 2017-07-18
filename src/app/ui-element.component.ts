@@ -1,3 +1,4 @@
+import { CpthemeMyComponent } from './cptheme-my/cptheme-my.component';
 import { CpThemeComponent } from './cptheme.component';
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { NumberComponent } from './number.component';
@@ -13,6 +14,7 @@ export class UIElementComponent implements AfterViewInit {
   @ViewChild(StopwatchComponent) private stopwatchComponent: StopwatchComponent;
   @ViewChild(CpColorDirective) private cpColorDirective: CpColorDirective;
   @ViewChild(CpThemeComponent) private cpThemeComponent: CpThemeComponent;
+  @ViewChild(CpthemeMyComponent) private cpthemeMyComponent: CpthemeMyComponent;
   @ViewChild('name') private elTitle: ElementRef;
 
   ngAfterViewInit() {
@@ -43,9 +45,7 @@ export class UIElementComponent implements AfterViewInit {
   }
 
    changeColor2(background, color: string) {
-     console.log('sale', this)
-    this.cpThemeComponent.changeColor('red', 'green')
-   // this.elTitle.nativeElement.style.color =  'pink'
-    // this.cpThemeComponent.changeColor('red', color);
+     this.elTitle.nativeElement.style.color = 'pink';
+     this.cpthemeMyComponent.changeColor(background);
   }
 }
