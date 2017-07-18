@@ -1,7 +1,16 @@
 # ViewChild
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+http://www.concretepage.com/angular-2/angular-2-viewchild-example
 
+- @ViewChild using component: Number example (number-parent.component.ts, number-parent.component.html, number.component.ts ) && stopwatch example (stopwatch-parent.component.ts, stopwatch-parent.component.html, stopwatch.component.ts)
+
+- @ViewChild using a directive: cpcolor example (cpcolor-parent.component.ts, cpcolor-parent.component.html, cpcolor.directive.ts)
+
+- @ViewChild with Template Variable using ElementRef to access Native Element example
+(cptheme.component.ts, cptheme.component.html)
+
+- Using multiple @ViewChild: 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

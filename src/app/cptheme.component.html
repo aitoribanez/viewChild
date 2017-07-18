@@ -1,0 +1,13 @@
+<h3>@ViewChild with Template Variable using ElementRef to access Native Element </h3>
+<div>
+   Name: <input type="text" #name> <br/>
+   City: <input type="text" #city>  
+</div>
+
+<div>
+  Change Color:
+  <input type="radio" name="rad" (click)= "changeColor('green', 'yellow')"> Green
+  <input type="radio" name="rad" (click)= "changeColor('cyan', 'blue')"> Cyan
+  <input type="radio" name="rad" (click)= "changeColor('blue', 'green')"> Blue
+</div>
+
